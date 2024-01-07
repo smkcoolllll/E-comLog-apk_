@@ -8,9 +8,8 @@ const Navbar = ({ onOptionChange }) => {
     onOptionChange(option);
     setSelectedOption(option);
 
-    // If the Ecom-cataLoG_🛒 link is clicked, redirect to landing section
     if (option === "ecomcatalog") {
-      setSelectedOption(null); // Reset selectedOption to trigger the rendering of landing-section
+      setSelectedOption(null); 
     }
   };
 
