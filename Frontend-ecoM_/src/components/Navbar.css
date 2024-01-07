@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3271ee;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  cursor: pointer;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #3271ee;
+}
+
+.navbar-icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+/* Add some padding to the body to prevent content from being hidden behind the fixed navbar */
+body {
+  padding-top: 80px; /* Adjust the value based on the height of your navbar */
+}
+
+/* Rest of your existing styles */
+
+
+ 
+  
+  .navbar-icon {
+    width: 35px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    margin-left: 20px; /* Adjust the margin to create space between the icon and text */
+  }
+  /* Navbar.css */
+
+.landing-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.landing-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

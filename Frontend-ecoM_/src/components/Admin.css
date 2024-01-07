@@ -1,0 +1,175 @@
+/* General Reset */
+
+/* Style the scrollbar */
+::webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+}
+
+::webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Round the corners of the thumb */
+}
+
+::webkit-scrollbar-track {
+  background-color: #eee; /* Color of the scrollbar track */
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* Toolbar and Navigation Styles */
+.toolbar {
+  width: 100%;
+  height: 120px;
+  background-color: #303030;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.toolbar-nav {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+  height: 80px; /* Adjust the height as needed */
+}
+
+.logo h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+.spacer {
+  display: flex;
+  flex: 1;
+}
+
+/* Search Bar and Social Icons Container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.search-bar input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon,
+.notification-icon {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  color: #fff; /* Set the desired color */
+  margin-right: 1rem; /* Add space between icons */
+}
+
+.notification-icon i {
+  margin-right: 0.5rem; /* Add space between icon and count */
+}
+
+.notification-count {
+  font-size: 1rem; /* Adjust the size as needed */
+  background-color: rgb(255, 0, 0); /* Set the background color for the count */
+  color: #fff; /* Set the text color for the count */
+  padding: 0.3rem 0.6rem; /* Add padding to the count */
+  border-radius: 50%; /* Make it a circle */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  max-width: 360px;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  background-color: #eee8a5;
+  box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: -100%;
+  z-index: 1200; /* Updated z-index to a higher value */
+  transition: left ease 0.8s;
+}
+
+.sidebar-ul li {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.close-btn {
+  width: 30px;
+  height: 40px;
+  float: right;
+  margin: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.backDrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sidebar.active {
+  left: 0;
+  transition: left ease 0.5s;
+}
+
+/* Main Container Styles */
+.main-container {
+  height: auto;
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+/* Background Image Styles */
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,329 @@
+/* Admin.css */
+
+/* Add the following styles to your CSS file */
+
+/* Styles for the toolbar and navigation */
+.toolbar {
+    width: 100%;
+    height: 120px;
+    background-color: #f15a5a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .toolbar-nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+    height: 80px; /* Adjust the height as needed */
+  }
+  
+  .logo h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.9rem;
+  }
+  
+  .spacer {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Styles for the search bar and social icons container */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .search-bar input {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    margin-right: 0.5rem;
+  }
+  
+  .social-icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #fff; /* Set the desired color */
+    margin-right: 1rem; /* Add space between social icons */
+  }
+  
+  .notification-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem; /* Add space between notification icon and social icons */
+  }
+  
+  .notification-icon i {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #fff; /* Set the desired color */
+    margin-right: 0.5rem; /* Add space between notification icon and count */
+  }
+  
+  .notification-count {
+    font-size: 1rem; /* Adjust the size as needed */
+    background-color: red; /* Set the background color for the count */
+    color: #fff; /* Set the text color for the count */
+    padding: 0.3rem 0.6rem; /* Add padding to the count */
+    border-radius: 50%; /* Make it a circle */
+  }
+  
+  
+  
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .toolbar {
+      width: 100%;
+      height: 120px;
+      background-color: #050505;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    
+    .toolbar-nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    
+    ul,
+    a {
+      text-decoration: none;
+      list-style: none;
+      color: #080808;
+    }
+    
+    ul a:hover {
+      color: orange;
+      transition: ease 0.5s;
+    }
+  /*   
+    ul {
+      display: flex;
+    }
+     */
+    li {
+      margin: 0 2rem;
+      font-size: 1.2rem;
+    }
+    
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+      margin-left: 0.6rem;
+    }
+    
+    .spacer {
+      display: flex;
+      flex: 1;
+    }
+    
+    .toggle-Btn {
+      width: 40px;
+      height: 30px;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 1.2rem 0 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn-line {
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+    }
+    
+    .sidebar {
+      max-width: 360px;
+      width: 70%;
+      height: 100%;
+      position: fixed;
+      background-color: #eee8a5;
+      box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.7);
+      top: 0;
+      left: -100%;
+      z-index: 1200; /* Updated z-index to a higher value */
+      transition: left ease 0.8s;
+    }
+    
+    .sidebar-ul li {
+      margin: 2rem 0;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+    
+    .sidebar-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+      margin-left: 3rem;
+    }
+    
+    .close-btn {
+      width: 30px;
+      height: 40px;
+      float: right;
+      margin: 1rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: #fff;
+    }
+    
+    .backDrop {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .sidebar.active {
+      left: 0;
+      transition: left ease 0.5s;
+    }
+    
+    main {
+      margin-top: 80px;
+      margin-left: 1rem;
+    }
+    /* ... */
+  
+  .search-bar {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+    
+    .search-bar input {
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      outline: none;
+      margin-right: 0.5rem;
+    }
+    
+    .icon-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .icon-container i {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    /* ... */
+    /* Admin.css */
+  
+  /* Add the following styles */
+  
+  .toolbar-nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      margin-right: 10px;
+      height: 80px; /* Adjust the height as needed */
+    }
+    
+    .logo h2 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.9rem;
+    }
+    
+    /* Add the following styles to your CSS file */
+  
+  /* ... (Your existing styles) */
+  
+  .social-icon {
+      font-size: 1.5rem; /* Adjust the size as needed */
+      color: #fff; /* Set the desired color */
+      margin-right: 1rem; /* Add space between social icons */
+    }
+    
+    .notification-icon {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem; /* Add space between notification icon and social icons */
+    }
+    
+    .notification-icon i {
+      font-size: 1.5rem; /* Adjust the size as needed */
+      color: #fff; /* Set the desired color */
+      margin-right: 0.5rem; /* Add space between notification icon and count */
+    }
+    
+    .notification-count {
+      font-size: 1rem; /* Adjust the size as needed */
+      background-color: rgb(255, 0, 0); /* Set the background color for the count */
+      color: #fff; /* Set the text color for the count */
+      padding: 0.3rem 0.6rem; /* Add padding to the count */
+      border-radius: 50%; /* Make it a circle */
+    }
+    
+    /* ... (Your existing styles) */
+    /* Admin.css */
+  
+  /* Styles for the main container */
+  .main-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+  
+  /* Styles for the background image */
+  .background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Styles for the fixed navigation bar */
+  
