@@ -1,5 +1,4 @@
- PS C:\Users\P1357987\Desktop\dummyrecy\smtp-serve_ (2)> 
- PS C:\Users\P1357987\Desktop\cap_\capfrontfinal_>                 
+          
                   E-commerce Product Catalog
 
 ● Objective: Build a Java application for managing an e-commerce product
