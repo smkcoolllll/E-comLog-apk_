@@ -6,8 +6,8 @@ import AddCategory from './AddCategory';
 import AnimatedForm from './AnimatedForm';
 import Admin from './Admin';
 import UserDboard from './userDboard';
-// App.js or Dashboard.jsx
-import Users from './Users';  // Make sure 'Users' matches the exact file name
+
+import Users from './Users';  
 
 const Dashboard = () => {
   const [selectedOption, setSelectedOption] = useState(null);
