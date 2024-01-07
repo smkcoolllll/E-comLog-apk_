@@ -3,7 +3,6 @@ import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
-// Import Categories if needed
 
 const UpdateModal = ({
   isUpdateModalOpen,
